@@ -1,0 +1,87 @@
+:root {
+  --bg: #0f1724;
+   --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #6ee7b7;
+  --radius: 14px;
+  --max: 1000px; 
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+  background: linear-gradient(180deg, var(--bg), #071021);
+  color: #e6eef6;
+  font-size: 1.2rem;
+}
+
+
+.contact{
+  color: #2AFFC7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-description{
+  display: flex;
+  justify-content: center;
+  color: #fff;    
+}
+
+.form-box{
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+    height: 300px;
+    width: 430px;
+    margin-top: 20px;
+    border: 2px solid #6ee7b7;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.heading{
+    font-size: 1.2rem;
+    color: #6ee7b7;
+    padding: 20px;
+}
+
+input{
+    background-color: linear-gradient(180deg, var(--bg), #071021);
+    border: 1.5pex solid black;
+    color: white;
+}
+
+.msg{
+    background-color: linear-gradient(180deg, var(--bg), #071021);
+    border: 1.5px solid black;
+    color: white; 
+    margin-left: 40px;
+}
+
+
+.button{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #37F7C3;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px;
+}  
+
+.button:hover{
+    background-color: #19C89A;
+  }
+.button:active{
+  background: #37F7C3;
+}

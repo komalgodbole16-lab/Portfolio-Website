@@ -1,0 +1,30 @@
+:root {
+  --bg: #0f1724;
+   --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #6ee7b7;
+  --radius: 14px;
+  --max: 1000px; 
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg), #071021);
+  color: #e6eef6;
+  font-size: 1.2rem;
+}
+
+.resume{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.resume iframe{
+  width: 100vw;
+  height: 100vh; 
+  border: none;
+}

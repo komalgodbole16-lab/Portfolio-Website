@@ -1,0 +1,163 @@
+:root {
+  --bg: #0f1724;
+   --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #6ee7b7;
+  --radius: 14px;
+  --max: 1000px; 
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20px;
+  background: linear-gradient(180deg, var(--bg), #071021);
+  color: #e6eef6;
+  font-size: 1.2rem;
+}
+
+.about-container {
+  max-width: var(--max);
+  margin:  auto;
+  padding: 2px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), #66FFCC);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: #042022;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.role {
+  margin: 4px 0 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.tagline {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--accent), #66FFCC);
+  color: #042022;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--accent);
+}
+
+/* Details Section */
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.card-p {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+#heading{
+  color: #66FFCC;
+}
+
+.skills {
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 2rem;
+}
+
+/* Projects Section */
+.projects {
+  margin-top: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.proj {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .details,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+}
